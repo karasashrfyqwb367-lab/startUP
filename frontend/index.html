@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartUp AI | Build Your Dream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="logo" dir="ltr">
+            StartUp<span>AI</span> <i class="fa-solid fa-rocket"></i>
+        </div>
+        <div class="menu-toggle" id="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-links">
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
+            </div>
+            <div class="nav-links-wrap">
+                <a href="#" data-target="hero-section" class="nav-btn active" data-en="Home" data-ar="الرئيسية">Home</a>
+                <a href="#" data-target="services-section" class="nav-btn" data-en="Services"
+                    data-ar="خدماتنا">Services</a>
+                <a href="#" data-target="pricing-section" class="nav-btn" data-en="Pricing"
+                    data-ar="الأسعار">Pricing</a>
+
+                <a href="#" data-target="create-company-section" class="nav-btn" data-en="Build Company"
+                    data-ar="إنشاء شركة">Build Company</a>
+                <a href="#" data-target="jobs-section" class="nav-btn" data-en="Find Jobs" data-ar="وظائف">Jobs</a>
+            </div>
+            <a href="#" data-target="dashboard-section" id="nav-dashboard" class="nav-btn hidden" data-en="Dashboard"
+                data-ar="لوحة التحكم">Dashboard</a>
+            <a href="#" data-target="project-management-section" id="nav-projects" class="nav-btn hidden"
+                data-en="Projects" data-ar="إدارة المشاريع">Projects</a>
+            <button id="auth-btn" class="primary-btn" data-en="Login" data-ar="تسجيل الدخول">Login</button>
+        </div>
+    </nav>
+
+    <!-- Home / Hero Section -->
+    <section id="hero-section" class="hero-container fade-in">
+        <div class="hero-content">
+            <h1 data-en="Unleash your startup's potential with StartUp AI"
+                data-ar="أطلق العنان لإمكانيات شركتك مع StartUp AI">
+                Unleash your startup's potential with StartUp AI</h1>
+            <p data-en="StartUp AI combines advanced intelligent analysis with total transparency. Manage feasibility studies, tasks, and recruitment with absolute security."
+                data-ar="StartUp AI يجمع بين ذكاء الـ AI والشفافية التامة. أدر دراسات الجدوى، المهام، والتوظيف بأمان تام وسهولة متناهية.">
+                StartUp AI combines advanced intelligent analysis with total transparency. Manage feasibility studies,
+                tasks, and recruitment with absolute security.
+            </p>
+            <div class="hero-btns">
+                <button class="cta-btn pulse" onclick="showSection('auth-section')" data-en="Start Free Analysis"
+                    data-ar="ابدأ التحليل المجاني">Start Free Analysis</button>
+                <button class="secondary-btn" onclick="showSection('services-section')" data-en="Explore Features"
+                    data-ar="استكشف المميزات">Explore Features</button>
+            </div>
+            <div class="trust-bar">
+                <span data-en="Trusted by the next gen of" data-ar="موثوق من قبل جيل">Trusted by the next gen of</span>
+                <div class="trust-icons">
+                    <i class="fa-brands fa-stripe"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-aws"></i>
+                    <i class="fa-brands fa-microsoft"></i>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="glass-mockup">
+                <div class="mockup-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <div class="mockup-content">
+                    <div class="chart-line green"></div>
+                    <div class="chart-line"></div>
+                    <div class="chart-line teal"></div>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <small style="color: var(--secondary)">ROI</small>
+                            <h4 style="margin:0">+124%</h4>
+                        </div>
+                        <div class="stat-box">
+                            <small style="color: var(--accent)">Safety</small>
+                            <h4 style="margin:0">Verified</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Simplicity Section -->
+    <section id="blockchain-section" class="container fade-in">
+        <div class="glass-card" style="padding: 3rem; text-align: center;">
+            <h2 data-en="Smart Planning Made Simple" data-ar="التخطيط الذكي بكل بساطة">Smart Planning Made Simple</h2>
+            <p data-en="Think of StartUp AI as your digital partner that never forgets. It keeps your contracts, tasks, and progress safe and clear for everyone on the team."
+                data-ar="تخيل StartUp AI كأنه شريكك الرقمي الذي لا ينسى. يحافظ على عقودك، مهامك، وتقدمك آمنًا وواضحًا لجميع أفراد الفريق.">
+                Think of StartUp AI as your digital partner that never forgets. It keeps your contracts, tasks, and
+                payments safe and transparent for everyone on the team.
+            </p>
+            <div class="blockchain-steps">
+                <div class="step">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4 data-en="Immutable Trust" data-ar="ثقة لا تتغير">Immutable Trust</h4>
+                    <p data-en="Every task and contract is locked forever." data-ar="كل مهمة وعقد يتم قفلها للأبد."></p>
+                </div>
+                <div class="step">
+                    <i class="fa-solid fa-eye"></i>
+                    <h4 data-en="Total Transparency" data-ar="شفافية كاملة">Total Transparency</h4>
+                    <p data-en="Track progress with zero hidden steps." data-ar="تتبع التقدم بدون أي خطوات مخفية."></p>
+                </div>
+                <div class="step">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <h4 data-en="Verified Growth" data-ar="نمو موثق">Verified Growth</h4>
+                    <p data-en="Secure your future with digital proof." data-ar="أمن مستقبلك بإثبات رقمي."></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services-section" class="hidden container fade-in">
+        <div class="section-header">
+            <h1 data-en="Simplified Startup Tools" data-ar="أدوات ذكية ومبسطة لشركتك">Simplified Startup Tools</h1>
+            <p data-en="Everything you need in one secure place, powered by advanced AI technology."
+                data-ar="كل ما تحتاجه في مكان واحد آمن، مدعوم بتقنيات الذكاء الاصطناعي المتطورة.">
+            </p>
+        </div>
+        <div class="services-grid">
+            <!-- Card 1: Feasibility Studies -->
+            <div class="service-card glass-card">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <h3 data-en="Simple Feasibility Studies" data-ar="دراسات جدوى مبسطة">Simple Feasibility Studies</h3>
+                <p data-en="Generate clear reports to understand your market and budget without complexity."
+                    data-ar="أنشئ تقارير واضحة لفهم سوقك وميزانيتك بدون أي تعقيدات."></p>
+                <ul>
+                    <li data-en="AI-Powered Insights" data-ar="رؤى مدعومة بالكفاءة">AI-Powered Insights</li>
+                    <li data-en="Financial Clarity" data-ar="وضوح مالي">Financial Clarity</li>
+                </ul>
+            </div>
+            <!-- Card 2: Task & Project Management -->
+            <div class="service-card glass-card">
+                <i class="fa-solid fa-list-check"></i>
+                <h3 data-en="Task & Project Mgmt" data-ar="إدارة المهام والمشاريع">Task & Project Mgmt</h3>
+                <p data-en="Organize your daily workflow and track milestones on the secure ledger."
+                    data-ar="نظم سير عملك اليومي وتتبع مراحل المشروع على سجل آمن."></p>
+                <ul>
+                    <li data-en="Step-by-Step Tracking" data-ar="تتبع خطوة بخطوة">Step-by-Step Tracking</li>
+                    <li data-en="Team Synchronization" data-ar="تزامن الفريق">Team Synchronization</li>
+                </ul>
+            </div>
+            <!-- Card 3: Easy Recruitment -->
+            <div class="service-card glass-card">
+                <i class="fa-solid fa-user-plus"></i>
+                <h3 data-en="Secure Recruitment" data-ar="توظيف آمن وموثوق">Secure Recruitment</h3>
+                <p data-en="Find verified talent or apply for jobs with one tap. Trust is built-in."
+                    data-ar="ابحث عن مواهب موثقة أو قدم أبلكيشن بلمسة واحدة. الثقة جزء من النظام."></p>
+                <ul>
+                    <li data-en="Verified Candidates" data-ar="مرشحون موثقون">Verified Candidates</li>
+                    <li data-en="Smart Matching" data-ar="طريقة ربط ذكية">Smart Matching</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing-section" class="hidden container fade-in">
+        <div class="section-header">
+            <h1 data-en="Flexible Pricing" data-ar="خطط أسعار مرنة">Flexible Pricing</h1>
+            <p data-en="Choose the plan that fits your startup's growth stage."
+                data-ar="اختر الخطة التي تناسب مرحلة نمو شركتك الناشئة.">Choose the plan that fits your startup's growth
+                stage.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card glass-card">
+                <h3 data-en="Free" data-ar="مجاني">Free</h3>
+                <div class="price">$0<span>/mo</span></div>
+                <ul>
+                    <li data-en="1 Company Analysis" data-ar="تحليل شركة واحدة">1 Company Analysis</li>
+                    <li data-en="Basic Job Posting" data-ar="نشر وظائف أساسي">Basic Job Posting</li>
+                </ul>
+                <button class="secondary-btn" style="margin-top: 2rem;" data-en="Get Started" data-ar="ابدأ الآن">Get
+                    Started</button>
+            </div>
+            <div class="service-card glass-card" style="border-color: var(--secondary);">
+                <h3 data-en="Pro" data-ar="برو">Pro</h3>
+                <div class="price">$49<span>/mo</span></div>
+                <ul>
+                    <li data-en="Unlimited Analysis" data-ar="تحليلات غير محدودة">Unlimited Analysis</li>
+                    <li data-en="AI Priority Support" data-ar="دعم أولوية بالذكاء الاصطناعي">AI Priority Support</li>
+                    <li data-en="Custom Job Branding" data-ar="علامة تجارية مخصصة للوظائف">Custom Job Branding</li>
+                </ul>
+                <button class="cta-btn" style="margin-top: 2rem;" data-en="Go Pro" data-ar="اشترك الآن">Go Pro</button>
+            </div>
+            <div class="service-card glass-card">
+                <h3 data-en="Enterprise" data-ar="شركات">Enterprise</h3>
+                <div class="price">Custom</div>
+                <ul>
+                    <li data-en="Dedicated AI Model" data-ar="نموذج ذكاء اصطناعي مخصص">Dedicated AI Model</li>
+                    <li data-en="Advanced Security" data-ar="أمان متقدم">Advanced Security</li>
+                </ul>
+                <button class="secondary-btn" style="margin-top: 2rem;" data-en="Contact Sales"
+                    data-ar="اتصل بالمبيعات">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <main class="container">
+        <!-- Auth Section -->
+        <section id="auth-section" class="glass-card fade-in">
+            <div class="auth-tabs">
+                <button class="tab-btn active" data-tab="login-form" data-en="Login"
+                    data-ar="تسجيل الدخول">Login</button>
+                <button class="tab-btn" data-tab="signup-form" data-en="Sign Up" data-ar="إنشاء حساب">Sign Up</button>
+            </div>
+
+            <form id="login-form" class="auth-form active">
+                <h2 data-en="Welcome Back" data-ar="مرحباً بعودتك">Welcome Back</h2>
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="login-email" placeholder="Email Address" data-placeholder-en="Email Address"
+                        data-placeholder-ar="البريد الإلكتروني" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="login-password" placeholder="Password" data-placeholder-en="Password"
+                        data-placeholder-ar="كلمة المرور" required>
+                </div>
+                <button type="submit" class="cta-btn"><span data-en="Login" data-ar="دخول">Login</span> <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </form>
+
+            <form id="signup-form" class="auth-form">
+                <h2 data-en="Create Account" data-ar="إنشاء حساب جديد">Create Account</h2>
+                <div class="input-group">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" id="signup-name" placeholder="Full Name" data-placeholder-en="Full Name"
+                        data-placeholder-ar="الاسم الكامل" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="signup-email" placeholder="Email Address"
+                        data-placeholder-en="Email Address" data-placeholder-ar="البريد الإلكتروني" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="signup-password" placeholder="Password" data-placeholder-en="Password"
+                        data-placeholder-ar="كلمة المرور" required>
+                </div>
+                <button type="submit" class="cta-btn"><span data-en="Sign Up" data-ar="تسجيل">Sign Up</span> <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </section>
+
+        <!-- Create Company Section -->
+        <section id="create-company-section" class="hidden glass-card fade-in">
+            <div class="section-header">
+                <h1 data-en="Launch Your Vision" data-ar="أطلق رؤيتك">Launch Your Vision</h1>
+                <p data-en="Describe your dream company and let AI analyze its potential."
+                    data-ar="صف شركتك الناشئة ودع الذكاء الاصطناعي يحلل فرص نجاحها.">Describe your dream company and let
+                    AI analyze its potential.</p>
+            </div>
+            <form id="company-form">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label data-en="Company Name" data-ar="اسم الشركة">Company Name</label>
+                        <input type="text" id="company-name" placeholder="e.g. Nexus Innovations"
+                            data-placeholder-en="e.g. Nexus Innovations" data-placeholder-ar="مثلاً: ابتكارات المستقبل"
+                            required>
+                    </div>
+                    <div class="input-group">
+                        <label data-en="Industry" data-ar="المجال">Industry</label>
+                        <select id="company-industry" required>
+                            <option value="" disabled selected data-en="Select Industry" data-ar="اختر المجال">Select
+                                Industry</option>
+                            <option value="Technology & Software" data-en="Technology & Software"
+                                data-ar="التكنولوجيا والبرمجيات">Technology & Software</option>
+                            <option value="Artificial Intelligence" data-en="Artificial Intelligence"
+                                data-ar="الذكاء الاصطناعي">Artificial Intelligence</option>
+                            <option value="E-Commerce & Retail" data-en="E-Commerce & Retail"
+                                data-ar="التجارة الإلكترونية">E-Commerce & Retail</option>
+                            <option value="Fintech & Finance" data-en="Fintech & Finance" data-ar="التكنولوجيا المالية">
+                                Fintech & Finance</option>
+                            <option value="Healthcare & Biotech" data-en="Healthcare & Biotech"
+                                data-ar="الرعاية الصحية">Healthcare & Biotech</option>
+                            <option value="Education & EdTech" data-en="Education & EdTech" data-ar="التعليم">Education
+                                & EdTech</option>
+                            <option value="Other" data-en="Other" data-ar="أخرى">Other</option>
+                        </select>
+                    </div>
+                    <div id="other-industry-group" class="input-group hidden">
+                        <label data-en="Custom Industry" data-ar="مجال مخصص">Custom Industry</label>
+                        <input type="text" id="other-industry" placeholder="e.g. Space Tourism"
+                            data-placeholder-en="e.g. Space Tourism" data-placeholder-ar="مثلاً: سياحة الفضاء">
+                    </div>
+                    <div class="input-group">
+                        <label data-en="Initial Capital ($)" data-ar="رأس المال المبدئي ($)">Initial Capital ($)</label>
+                        <input type="number" id="company-capital" placeholder="e.g. 50000"
+                            data-placeholder-en="e.g. 50000" data-placeholder-ar="مثلاً: 50000" required>
+                    </div>
+                </div>
+                <div class="input-group full-width">
+                    <label data-en="Description & Vision" data-ar="الوصف والرؤية">Description & Vision</label>
+                    <textarea id="company-desc" rows="5"
+                        placeholder="Describe your company's mission, products, and goals..."
+                        data-placeholder-en="Describe your company's mission, products, and goals..."
+                        data-placeholder-ar="صف مهمة شركتك، منتجاتها، وأهدافك..." required></textarea>
+                </div>
+                <button type="submit" class="cta-btn pulse"><span data-en="Create Company" data-ar="إنشاء الشركة">Create
+                        Company</span> <i class="fa-solid fa-rocket"></i></button>
+            </form>
+        </section>
+
+        <!-- AI Report Section -->
+        <section id="ai-report-section" class="hidden glass-card fade-in">
+            <div class="ai-header">
+                <div>
+                    <h2 id="report-company-name">Company Name</h2>
+                    <span class="badge" data-en="AI Analysis Ready" data-ar="تحليل الذكاء الاصطناعي جاهز">AI Analysis
+                        Ready</span>
+                </div>
+                <div class="action-btns">
+                    <button id="generate-ai-btn" class="ai-btn">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> <span data-en="Generate Full Report"
+                            data-ar="توليد التقرير الكامل">Generate Full Report</span>
+                    </button>
+                    <button id="show-job-btn" class="primary-btn hidden">
+                        <i class="fa-solid fa-plus"></i> <span data-en="Create Job" data-ar="نشر وظيفة">Create
+                            Job</span>
+                    </button>
+                </div>
+            </div>
+            <div id="ai-loading" class="hidden">
+                <div class="loader"></div>
+                <p data-en="AI is analyzing market data..." data-ar="الذكاء الاصطناعي يحلل بيانات السوق...">AI is
+                    analyzing market data...</p>
+            </div>
+            <div id="ai-content" class="report-content hidden">
+                <!-- AI Result goes here -->
+            </div>
+        </section>
+
+        <!-- Create Job Section -->
+        <section id="create-job-section" class="hidden glass-card fade-in">
+            <div class="section-header">
+                <h1 data-en="Post a Job" data-ar="نشر وظيفة جديدة">Post a Job</h1>
+                <p data-en="Hire the best talent based on your AI strategic analysis."
+                    data-ar="وظف أفضل الكفاءات بناءً على التحليل الاستراتيجي لشركتك.">Hire the best talent based on your
+                    AI strategic analysis.</p>
+            </div>
+            <form id="job-form">
+                <input type="hidden" id="job-company-id">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label data-en="Job Title" data-ar="المسمى الوظيفي">Job Title</label>
+                        <input type="text" id="job-title" placeholder="e.g. Senior Frontend Developer"
+                            data-placeholder-en="e.g. Senior Frontend Developer"
+                            data-placeholder-ar="مثلاً: مطور برمجيات" required>
+                    </div>
+                    <div class="input-group">
+                        <label data-en="Location" data-ar="الموقع">Location</label>
+                        <input type="text" id="job-location" placeholder="e.g. Riyadh, Remote"
+                            data-placeholder-en="e.g. Riyadh, Remote" data-placeholder-ar="الرياض، عمل عن بعد" required>
+                    </div>
+                    <div class="input-group">
+                        <label data-en="Salary (Monthly / SAR)" data-ar="الراتب (شهرياً / ريال)">Salary (Monthly /
+                            SAR)</label>
+                        <input type="number" id="job-salary" placeholder="e.g. 15000" data-placeholder-en="e.g. 15000"
+                            data-placeholder-ar="مثلاً: 15000" required>
+                    </div>
+                </div>
+                <div class="input-group full-width">
+                    <label data-en="Job Description & Requirements" data-ar="الوصف الوظيفي والمتطلبات">Job Description &
+                        Requirements</label>
+                    <textarea id="job-desc" rows="5"
+                        placeholder="Detail the responsibilities and required skills for this role..."
+                        data-placeholder-en="Detail the responsibilities and required skills for this role..."
+                        data-placeholder-ar="اكتب تفاصيل المسؤوليات والمهارات المطلوبة..." required></textarea>
+                </div>
+                <button type="submit" class="cta-btn pulse"><span data-en="Publish Job" data-ar="نشر الوظيفة">Publish
+                        Job</span> <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard-section" class="hidden fade-in">
+            <div class="section-header">
+                <h1 data-en="Owner Dashboard" data-ar="لوحة تحكم المالك">Owner Dashboard</h1>
+                <p data-en="Manage your companies, jobs, and track applicants."
+                    data-ar="أدر شركاتك، وظائفك، وتابع المتقدمين.">Manage your companies, jobs, and track applicants.
+                </p>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Companies Summary -->
+                <div class="glass-card">
+                    <h3 data-en="My Companies" data-ar="شركاتي"> My Companies</h3>
+                    <div id="dash-companies-list" class="dash-list">
+                        <!-- Loaded via JS -->
+                    </div>
+                </div>
+
+                <!-- Jobs Summary -->
+                <div class="glass-card">
+                    <h3 data-en="My Job Postings" data-ar="وظائفي المنشورة"> My Job Postings</h3>
+                    <div id="dash-jobs-list" class="dash-list">
+                        <!-- Loaded via JS -->
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Applicants Detail (appears when a job is selected) -->
+            <div id="applicants-detail-section" class="hidden glass-card fade-in" style="margin-top: 2rem;">
+                <div class="ai-header">
+                    <h3 id="dash-job-title-applicants" data-en="Applicants for Job" data-ar="المتقدمين للوظيفة">
+                        Applicants for Job</h3>
+                    <button class="close-btn"
+                        onclick="document.getElementById('applicants-detail-section').classList.add('hidden')">&times;</button>
+                </div>
+                <div id="applicants-list" class="applicants-grid">
+                    <!-- Loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Management Section -->
+        <section id="project-management-section" class="content-section container hidden fade-in">
+            <div class="glass-card">
+                <h1 data-en="Project Management" data-ar="إدارة المشاريع">Project Management</h1>
+
+                <!-- Assign Task Form -->
+                <div
+                    style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 12px;">
+                    <h3 data-en="Assign New Task" data-ar="إسناد مهمة جديدة">Assign New Task</h3>
+                    <form id="task-form" class="ai-form"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div class="input-group">
+                            <label data-en="Employee Name" data-ar="اسم الموظف">Employee Name</label>
+                            <input type="text" id="task-emp-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label data-en="Employee Email" data-ar="إيميل الموظف">Employee Email</label>
+                            <input type="email" id="task-emp-email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label data-en="Project Name" data-ar="اسم المشروع">Project Name</label>
+                            <input type="text" id="task-project" placeholder="Marketing Campaign" required>
+                        </div>
+                        <div class="input-group">
+                            <label data-en="Task" data-ar="المهمة">Task</label>
+                            <input type="text" id="task-name" placeholder="UI Design Update" required>
+                        </div>
+                        <div class="input-group">
+                            <label data-en="Expected Duration" data-ar="المدة المتوقعة">Expected Duration</label>
+                            <input type="text" id="task-duration" placeholder="3 Days" required>
+                        </div>
+                        <button type="submit" class="ai-btn" style="height: fit-content; align-self: end;"
+                            data-en="Assign & Send Email" data-ar="إسناد وإرسال الإيميل">Assign & Send
+                            Email</button>
+                    </form>
+                </div>
+
+                <!-- Tracking Table -->
+                <div style="margin-top: 3rem; overflow-x: auto;">
+                    <h3 data-en="Tracking Table" data-ar="جدول المتابعة">Tracking Table</h3>
+                    <table class="styled-table"
+                        style="width: 100%; border-collapse: collapse; margin-top: 1rem; background: rgba(255,255,255,0.03);">
+                        <thead>
+                            <tr style="background: rgba(255,255,255,0.1);">
+                                <th data-en="Employee" data-ar="الموظف">Employee</th>
+                                <th data-en="Task" data-ar="المهمة">Task</th>
+                                <th data-en="Project" data-ar="المشروع">Project</th>
+                                <th data-en="Duration" data-ar="المدة">Duration</th>
+                                <th data-en="Status" data-ar="الحالة">Status</th>
+                                <th data-en="Actions" data-ar="إجراءات">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="task-table-body">
+                            <!-- Data will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jobs Section -->
+        <section id="jobs-section" class="hidden fade-in">
+            <div class="section-header">
+                <h1 data-en="Explore Opportunities" data-ar="استكشف الفرص">Explore Opportunities</h1>
+                <p data-en="Find the perfect role in top startups."
+                    data-ar="ابحث عن الوظيفة المثالية في أفضل الشركات الناشئة.">Find the perfect role in top startups.
+                </p>
+            </div>
+            <div id="jobs-grid" class="jobs-grid">
+                <!-- Job cards injected via JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="apply-modal" class="modal hidden">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h2 data-en="Apply Now" data-ar="تقديم الآن">Apply Now</h2>
+            <form id="apply-form">
+                <input type="hidden" id="apply-job-id">
+                <div class="input-group">
+                    <label data-en="Why are you the best fit?" data-ar="لماذا أنت الأنسب لهذه الوظيفة؟">Why are you the
+                        best fit?</label>
+                    <textarea id="apply-note" placeholder="Share your skills and experience..."
+                        data-placeholder-en="Share your skills and experience..."
+                        data-placeholder-ar="شاركنا مهاراتك وخبراتك..." required></textarea>
+                </div>
+                <!-- Simplified application -->
+                <button type="submit" class="cta-btn" data-en="Submit Application" data-ar="إرسال الطلب">Submit
+                    Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- OTP Modal -->
+    <div id="otp-modal" class="modal hidden">
+        <div class="modal-content glass-card">
+            <span class="close-otp-modal" style="float: right; cursor: pointer; font-size: 1.5rem;">&times;</span>
+            <h2 data-en="Verify Your Email" data-ar="تفعيل الحساب">Verify Your Email</h2>
+            <p data-en="Please enter the OTP sent to your email."
+                data-ar="برجاء إدخال رمز التحقق المرسل لبريدك الإلكتروني.">Please enter the OTP sent to your email.</p>
+            <form id="otp-form">
+                <input type="hidden" id="otp-email">
+                <div class="input-group">
+                    <label data-en="OTP Code" data-ar="رمز التحقق">OTP Code</label>
+                    <input type="text" id="otp-code" placeholder="Enter OTP" data-placeholder-en="Enter OTP"
+                        data-placeholder-ar="أدخل الرمز" required>
+                </div>
+                <button type="submit" class="cta-btn" data-en="Verify Account" data-ar="تفعيل الحساب">Verify
+                    Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
