@@ -9,22 +9,21 @@ services:
       - key: PORT
         value: 10000
       - key: DB_URL
-        sync: false # User needs to provide this in Render Dashboard
+        sync: false
       - key: JWT_SECRET
-        sync: false # User needs to provide this
+        sync: false
       - key: OPENAI_API_KEY
-        sync: false # User needs to provide this
+        sync: false
       - key: EMAIL_USER
         sync: false
       - key: EMAIL_PASS
         sync: false
 
   # Frontend Service
-  - type: web
+  - type: static_site
     name: startup-frontend
-    runtime: static
-    buildCommand: "" # No build step for vanilla HTML/JS
+    buildCommand: "" 
     staticPublishPath: ./frontend
     envVars:
       - key: API_URL
-        value: https://startup-backend.onrender.com # Potential URL
+        value: https://startup-backend.onrender.com
