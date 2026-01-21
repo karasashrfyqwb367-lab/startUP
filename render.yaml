@@ -1,0 +1,30 @@
+services:
+  # Backend Service
+  - type: web
+    name: startup-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: node src/index.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: DB_URL
+        sync: false # User needs to provide this in Render Dashboard
+      - key: JWT_SECRET
+        sync: false # User needs to provide this
+      - key: OPENAI_API_KEY
+        sync: false # User needs to provide this
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
+
+  # Frontend Service
+  - type: web
+    name: startup-frontend
+    runtime: static
+    buildCommand: "" # No build step for vanilla HTML/JS
+    staticPublishPath: ./frontend
+    envVars:
+      - key: API_URL
+        value: https://startup-backend.onrender.com # Potential URL
