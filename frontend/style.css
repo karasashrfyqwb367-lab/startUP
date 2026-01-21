@@ -717,22 +717,29 @@ body.rtl .input-group select {
 }
 
 .chart-line {
-    height: 10px;
+    height: 24px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    width: 80%;
+    border-radius: 12px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.8rem;
 }
 
 .chart-line.green {
-    background: var(--secondary);
-    width: 70%;
-    box-shadow: 0 0 10px var(--secondary);
+    background: linear-gradient(90deg, var(--secondary), transparent);
+    width: 85%;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
 }
 
 .chart-line.teal {
-    background: var(--accent);
-    width: 50%;
-    box-shadow: 0 0 10px var(--accent);
+    background: linear-gradient(90deg, var(--accent), transparent);
+    width: 75%;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
 }
 
 .stats-grid {
@@ -753,6 +760,74 @@ body.rtl .input-group select {
 .stat-box:hover {
     background: rgba(255, 255, 255, 0.1);
     border-color: var(--secondary);
+}
+
+.mockup-text-overlay {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+body.rtl .mockup-text-overlay {
+    text-align: right;
+}
+
+.mockup-typewriter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    color: var(--secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid var(--secondary);
+    width: 0;
+    animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+    margin-bottom: 1rem;
+}
+
+.mockup-report-snippet {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 12px;
+    border-left: 3px solid var(--accent);
+}
+
+body.rtl .mockup-report-snippet {
+    border-left: none;
+    border-right: 3px solid var(--accent);
+}
+
+.mockup-report-snippet h5 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.mockup-report-snippet p {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--secondary)
+    }
 }
 
 .blockchain-steps {
@@ -795,6 +870,114 @@ body.rtl .input-group select {
 .step p {
     font-size: 0.85rem;
     color: var(--text-gray);
+}
+
+/* Premium Summary Section - The Integrated Journey */
+.premium-summary {
+    position: relative;
+    padding: 4rem;
+    overflow: hidden;
+    background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.1), transparent),
+        radial-gradient(circle at bottom left, rgba(139, 92, 246, 0.1), transparent),
+        var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.summary-badge {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: linear-gradient(90deg, var(--secondary), var(--accent));
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    animation: pulse-glow 2s infinite alternate;
+}
+
+@keyframes pulse-glow {
+    from {
+        box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+    }
+
+    to {
+        box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
+    }
+}
+
+.premium-summary h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.summary-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-gray);
+    text-align: justify;
+}
+
+.summary-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.summary-list li {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--secondary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.summary-list li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--secondary);
+}
+
+.summary-list li:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateX(10px);
+    border-color: var(--accent);
+}
+
+@media (max-width: 968px) {
+    .summary-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .premium-summary {
+        padding: 2.5rem;
+    }
+
+    .premium-summary h2 {
+        font-size: 2.2rem;
+    }
 }
 
 /* Services Section */
